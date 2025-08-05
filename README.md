@@ -1,9 +1,13 @@
 # EEWS-SpectrogramVAE-SAT
 Variational Autoencoder (VAE)-based On-site Earthquake Early Warning System Framework using Accelerometer for Estimating Acceleration Response Spectra.
+
 ---
+
 ## Objective
 This repository contains the source code for my undergraduate thesis at Universitas Indonesia. The project explores a deep learning-based EEWS framework to estimate **acceleration response spectra (SA(T))** from short-time seismic waveform data using spectrogram input. This method aims to support **On-site Earthquake Early Warning Systems (EEWS)** in Indonesia.
+
 ---
+
 ## Project Overview
 
 Traditional EEWS frameworks rely on feature extraction and phase-picking to estimate earthquake intensity parameters. This project proposes a faster, end-to-end alternative using fixed-window **log-Mel spectrogram** inputs and **Variational Autoencoder (VAE)** models (CNN-DNN and CNN-LSTM) to reconstruct SA(T) values.
@@ -13,7 +17,9 @@ Key highlights:
 - Output: Acceleration response spectra SA(T) for structural response analysis.
 - Models: CNN-DNN VAE (more stable) and CNN-LSTM VAE (effective for short periods).
 - Evaluation: Performed on both Indonesian (BMKG) and Italian (INSTANCE) datasets.
+
 ---
+
 ## Results Summary
 
 - **CNN-DNN VAE (3s)**:
@@ -21,7 +27,9 @@ Key highlights:
   - Average R² = 0.8633 on BMKG
 - **CNN-LSTM VAE (short-period T=0.01s on BMKG)**:
   - Average R² = 0.9749
+
 ---
+
 ## Project Structure
 
 ```
@@ -30,7 +38,9 @@ Key highlights:
 ├── requirements.txt     # Python dependencies
 └── README.md            # This file
 ```
+
 ---
+
 ## Datasets
 
 ###  Public Dataset (included/sample-ready)
@@ -43,9 +53,11 @@ Key highlights:
   Access to this dataset is restricted. Please contact the BMKG for access.
 
 ---
+
 ## Disclaimer
 
 This repository is intended for academic and educational purposes. The code provided for processing and modeling **INSTANCE data** is available. Any use of **BMKG data** requires proper authorization and is not included in this repository.
+
 ---
 ## Author
 
